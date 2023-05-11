@@ -20,12 +20,12 @@ export const putDb = async (content) => {
   const store = tx.objectStore("jate");
   const request = store.put({ id: 1, vlaue: content });
   const result = await request;
-  console.log("Entry has been saved to the database!", result.value);
+  console.log("Entry has been saved to the database!", result);
 };
 
 // TODO: Add logic for a method that gets all the content from the database
 export const getDb = async () => {
-  console.log("GET from the database");
+  console.log("Text retrieved from the database");
   const jateDb = await openDB("jate", 1);
   const tx = jateDb.transaction("jate", "readonly");
   const store = tx.objectStore("jate");
