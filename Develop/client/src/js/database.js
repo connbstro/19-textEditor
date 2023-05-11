@@ -20,7 +20,7 @@ export const putDb = async (content) => {
   const store = tx.objectStore("jate");
   const request = store.put({ id: 1, vlaue: content });
   const result = await request;
-  console.log("Entry has been saved to the database!", result);
+  console.log("Updated text entry has been saved to the database!", result);
 };
 
 // TODO: Add logic for a method that gets all the content from the database
