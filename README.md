@@ -5,7 +5,6 @@
 ## **Description:**
 
 The application is a browser-based text editor that satisfies the PWA requirements and operates both online and offline. It incorporates various data persistence methods to ensure redundancy in case a particular option is unsupported by the browser.
-
 <br/>
 
 ### [Click here to View Appplication](https://a-texteditor-19.herokuapp.com/)
